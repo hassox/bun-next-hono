@@ -1,24 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Starter Template
+
+This is a [Next.js](https://nextjs.org) starter template project. Clone the repository from [github.com/hassox/bun-next-hono](https://github.com/hassox/bun-next-hono) without history to get started.
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+git clone --depth=1 https://github.com/hassox/bun-next-hono.git
+cd bun-next-hono
+```
+
+Install the dependencies using [Bun](https://bun.sh):
+
+```bash
+bun install
+```
+
+Run the development server:
+
+```bash
 bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project includes several scripts for common tasks:
+
+- `bun dev`: Starts the development server.
+- `bun build`: Builds the application for production.
+- `bun start`: Starts the production server.
+- `bun lint`: Runs the linter to check for code quality issues.
+
+## API Routes with Hono
+
+This project uses [Hono](https://hono.dev) for handling API routes. Hono is a small, simple, and ultrafast web framework for the Edge.
+
+## Styling with Tailwind CSS
+
+We are using [Tailwind CSS version 4](https://tailwindcss.com) for styling. Tailwind CSS is a utility-first CSS framework for creating custom designs without leaving your HTML.
+
+## Components with Shadcn
+
+For building UI components, this project utilizes [Shadcn](https://shadcn.dev). Shadcn provides a set of accessible and customizable components for React.
 
 ## Learn More
 
